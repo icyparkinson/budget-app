@@ -123,3 +123,7 @@ h1{
 .itemEntry:hover .delete, .delete:hover{
     display:inline;
 }
+
+.itemEntry:hover{
+    border: 5px solid darkblue;
+}
