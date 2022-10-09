@@ -1,0 +1,16 @@
+<section class = "itemList">
+    <h1>List of Entries</h1>
+    <div class = "entryContainer">
+        <div *ngFor="let entry of budgetEntries">
+            <app-item-entry
+            *ngIf="entry.amount >= 0" 
+            [isIncome] = "true">
+            </app-item-entry>
+
+            <app-item-entry
+            *ngIf="entry.amount < 0" 
+            [isIncome] = "false">
+            </app-item-entry>
+        </div>
+    </div>
+</section>

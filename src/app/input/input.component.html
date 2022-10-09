@@ -1,0 +1,13 @@
+<section class="inputSection">
+    <form #itemForm = "ngForm" (ngSubmit)="onSubmit(itemForm)">
+
+        <input id = "dateBox" required name = "date" type = "date" [ngModel]="entry.date">
+
+        <input id = "amountBox" required name = "amount" type = "number" placeholder="$ Amount" [ngModel]="entry.amount">
+
+        <input id = "descBox" required name = "description" type = "text" placeholder="Description" [ngModel]="entry.description">
+        
+        <button id = "addBtn" type = "submit" [disabled]="!itemForm.valid">ADD</button>
+    </form>
+
+</section>
