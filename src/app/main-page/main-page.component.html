@@ -7,4 +7,4 @@
 
 <section id="line"></section>
 
-<app-item-list [budgetEntries]="budgetEntries"></app-item-list>
+<app-item-list [budgetEntries]="budgetEntries" (removeFromArray)="deleteEntry($event)"></app-item-list>

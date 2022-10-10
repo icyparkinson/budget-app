@@ -1,14 +1,14 @@
 <section class = "itemEntry" [ngClass]="{ 'income' : isIncome, 'expense' : !isIncome}">
         <section class = "date">
-            10/24/21
+            {{entry.date}}
         </section>   
         <section class = "desc">
-            Description Description Description Description
+            {{entry.description}}
         </section>   
         <section class = "amt">
-            100
+            {{entry.amount}}
         </section>
-        <div class = "delete">
+        <div class = "delete" (click)="onDeleteClick()">
             x
         </div>   
 </section>

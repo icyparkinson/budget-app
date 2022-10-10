@@ -18,4 +18,9 @@ export class MainPageComponent implements OnInit {
     this.budgetEntries.push(newItem)
   }
 
+  deleteEntry(item: BudgetEntry){
+    let index = this.budgetEntries.indexOf(item)
+    this.budgetEntries.splice(index, 1)
+  }
+
 }

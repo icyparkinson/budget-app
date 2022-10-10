@@ -4,12 +4,16 @@
         <div *ngFor="let entry of budgetEntries">
             <app-item-entry
             *ngIf="entry.amount >= 0" 
-            [isIncome] = "true">
+            [entry] = "entry"
+            [isIncome] = "true"
+            (deleteEntry)="delete(entry)">
             </app-item-entry>
 
             <app-item-entry
             *ngIf="entry.amount < 0" 
-            [isIncome] = "false">
+            [entry] = "entry"
+            [isIncome] = "false"
+            (deleteEntry)="delete(entry)">
             </app-item-entry>
         </div>
     </div>
