@@ -8,6 +8,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { InputComponent } from './input/input.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { ItemEntryComponent } from './item-list/item-entry/item-entry.component';
+import { EditEntryModalComponent } from './edit-entry-modal/edit-entry-modal.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ItemEntryComponent } from './item-list/item-entry/item-entry.component'
     MainPageComponent,
     InputComponent,
     ItemListComponent,
-    ItemEntryComponent
+    ItemEntryComponent,
+    EditEntryModalComponent
   ],
   imports: [
     BrowserModule,

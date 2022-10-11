@@ -8,19 +8,23 @@ import { BudgetEntry } from 'src/shared/models/budget-entry.model';
 })
 export class MainPageComponent implements OnInit {
 
+  totalNum: number = 0
+
   budgetEntries: BudgetEntry[] = new Array<BudgetEntry>()
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  addItem(newItem: BudgetEntry) {
+  addEntry(newItem: BudgetEntry) {
     this.budgetEntries.push(newItem)
+    this.totalNum += newItem.amount
   }
 
   deleteEntry(item: BudgetEntry){
     let index = this.budgetEntries.indexOf(item)
     this.budgetEntries.splice(index, 1)
+    this.totalNum -= item.amount
   }
 
 }

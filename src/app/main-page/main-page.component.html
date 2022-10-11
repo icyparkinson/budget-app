@@ -1,9 +1,9 @@
-<h1>Budget Calculator</h1>
+<h1>Budget Tracker</h1>
 <section class = "total">
-    <h2>1500</h2>
+    <h2 [ngClass]="{'red': totalNum < 0, 'green': totalNum > 0}">{{totalNum}}</h2>
 </section>
 
-<app-input (formSubmit)="addItem($event)"></app-input>
+<app-input (formSubmit)="addEntry($event)"></app-input>
 
 <section id="line"></section>
 
