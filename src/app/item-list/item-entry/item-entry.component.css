@@ -1,0 +1,53 @@
+.itemEntry{
+    display: flex;
+    width: 95%;
+    margin: 10px 0 5px 20px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.income{
+    background-color: rgb(187, 247, 187);
+}
+
+.expense{
+    background-color: rgb(241, 173, 173);
+}
+
+.date{
+    width: 150px;
+}
+
+.desc{
+    width: 80%;
+}
+
+.amt{
+    width: 10%;
+    text-align: end;
+}
+
+
+.delete{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: darkblue;
+    right: -15px;
+    top: -15px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    display: none;
+}
+
+.itemEntry:hover .delete, .delete:hover{
+    display:inline;
+}
+
+.itemEntry:hover{
+    border: 5px solid darkblue;
+}

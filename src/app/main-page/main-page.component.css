@@ -1,3 +1,18 @@
+.total{
+    display: flex;
+    height: 270px;
+    background-color:rgba(1, 1, 72);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.total{
+    color: white;
+    font-size: 7rem;
+}
+
+
 .red{
     color: rgb(241, 173, 173);
 }

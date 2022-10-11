@@ -1,0 +1,29 @@
+.inputSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 450px;
+    margin: 20px auto;
+}
+
+.inputSection input{
+    margin: 10px;
+    padding: 10px;
+}
+
+#amountBox{
+    width: 200px;
+}
+
+#descBox{
+    width: 300px;
+    
+}
+
+#addBtn{
+    padding: 10px;
+    border-radius: 25px;
+    border-color: rgb(40, 51, 113);
+    background-color:rgb(255, 223, 62);
+    font-weight: bold;
+}
